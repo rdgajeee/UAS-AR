@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Animal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('https://www.example.com/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .title {
+            font-size: 48px;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .button {
+            padding: 15px;
+            margin: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 50%;
+            background-color: rgba(0, 128, 0, 0.8);
+            color: white;
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s, transform 0.3s;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: rgba(0, 128, 0, 1);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="title">AR Animal</div>
+    <div class="button-container">
+        <a href="camera.html" class="button">Start</a>
+        <a href="markers.html" class="button">Marker</a>
+        <a href="guide.html" class="button">Guide</a>
+    </div>
+</body>
+</html>
